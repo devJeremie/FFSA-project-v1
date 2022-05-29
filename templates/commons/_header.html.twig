@@ -1,0 +1,69 @@
+
+
+<header>
+    <nav class="barMenu"><!--DEBUT NAVBAR-->
+
+
+        <ul>
+            <li>
+                <a class="linkA" href=" {{ path('home') }}">Accueil</a>
+            </li>
+            <li>
+                <a class="linkA" href="{{ path('karting') }}">Karting</a>
+            </li>
+            <li>
+                <a class="linkA" href="{{ path('course') }}">Course</a>
+            </li>
+            <li class="logoImg">
+                <a href="{{ path('home') }}"><img class="logo" src="../public/assets/img/logoFondWhite.png" alt="Logo Ligue de karting nouvelle aquitaine sud"></a>
+            </li>
+            <li>
+                <a class="linkA" href="{{ path('nosClubs') }}">Nos clubs</a>
+            </li>
+            <li>
+                <a class="linkA" href="{{ path('galerie') }}">Galerie</a>
+            </li>
+            <li>
+             <img class="account" src="../public/assets/img/monCompte.png" alt="Logo lien connexion mon compte">
+            </li>
+            <div class="loginMenuHidden">
+                <li>
+                    {% if app.user == false  %} <a  href={{path('app_register') }}> S'inscrire </a>{% else%}
+                        <a href={{path('app_logout') }}> Se déconnecter </a>{% endif %}
+                </li>
+                <li >
+                    {% if app.user == true  %}<a href={{path('myAccount') }}>Voir Profil </a> {% else%}
+                        <a href={{path('app_login') }}> Se Connecter </a>{% endif %}
+                </li>
+                {% if app.user == true %}
+                    <li>
+                        <a href={{path('view_members' ) }}>Voir les Membres</a>
+                    </li>
+                {% endif %}
+            </div>
+        </ul>
+
+    </nav><!--FIN NAVBAR-->
+    <div class="menuBurger">
+        <nav>
+            <div class="navigation">
+                <ul class="navLien">
+                    <li><a href="#">Karting</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Nos clubs</a></li>
+                    <li><a href="#">galerie</a></li>
+                </ul>
+                <div class="basculant"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="videoBack">
+        <h1 id="firstTitle" >LIGUE DE KARTING NOUVELLE AQUITAINE SUD</h1>
+    </div>
+
+
+    <!--FIN VIDEO BACKGROUND--> <!--DEBUT VIDEO BACKGROUND-->
+    <!--<video autoplay muted loop>
+        <source src="assets/img/videoBack/videoSurvolCircuitKartNoSound.mp4" type="video/mp4"><source>
+    </video> -->
+</header>

@@ -1,0 +1,21 @@
+{% extends 'baseBis.html.twig' %}
+
+{% block body %}<!-----------------PERMET D'AFFICHER TOUT LES MEMBRES ET SE LES UPPRIMER SI ON EST ADMIN------------------->
+    <span class="partnersTitle">NOS MEMBRES</span>
+    <section class="profileList">
+    {% for user in users  %}
+        <article class="profilesCard">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('uploadDirectory/' ~ user.media) }}" alt="Card image cap">
+                <div class="card-body profileBody">
+                    <span class="card-title">Nom:{{ user.name }}</span>
+                    <span class="card-text">Prénom:{{ user.lastName }}</span>
+                    <!--<a href="{{ path('home') }}" class="btn btn-primary">Accueil</a>-->
+                </div>
+            </div>
+            {% if is_granted('ROLE_ADMIN')%}<a href="{{ path('remove_user', {'id':user.id}) }}" >Supprimer le profil</a> {% endif %}
+        </article>
+    {% endfor %}
+    </section>
+        <button><a class="linkA" href=" {{ path('home') }}">Accueil</a></button>
+{%  endblock %}

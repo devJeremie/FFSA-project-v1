@@ -1,0 +1,24 @@
+{% extends 'baseBis.html.twig' %}
+
+{% block body %}<!--------------------------PERMET DE VOIR SON PROFIL ET DE LE MODIFIER--------------------------->
+<body>
+<h1 class="partnersTitle">Mon profil</h1>
+<article class="profilesCard">
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ asset('uploadDirectory/' ~ user.media) }}" alt="Card image cap">
+    <div class="card-body profileBody" >
+        <span class="card-title">  Nom: {{ user.lastname }}</span>
+        <span class="card-text"> Prénom: {{ user.name }}</span>
+        <span class="card-text">Mail: {{ user.email }}</span>
+        <button>
+        <a href="{{ path('userInfosUpdate', {'id':user.id}) }}" >Modifier</a>
+        </button>
+        <button>
+        <a href="{{ path('deleteUser', {'id':user.id}) }}">Supprimer</a>
+        </button>
+    </div>
+</div>
+</article>
+</body>
+
+    {%  endblock %}

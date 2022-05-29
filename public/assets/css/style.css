@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--------------------------BODY COLOR-----------------------------*/
+body{
+    background-color: lightgrey;
+}
+/*-----------------------------LOGIN FORM--------------------------------*/
+.login {
+    border: 1px solid black;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.login label, input, button{
+    margin-top: 15px;
+}
+
+.form-control{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.labelUpper{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login label{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.loginLeft{
+    width: 50%;
+    border: 1px solid black;
+    background-color: #F3EFEF;
+}
+
+.loginLeft img{
+    width: 380px;
+    padding-top: 50px;
+}
+.loginRight{
+    margin: 0 auto;
+    padding-top: 140px;
+    background-image: url("../img/grille-kart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    background-position: center;
+}
+
+.loginRight button{
+    margin-left: 33%;
+    margin-top: 20%;
+}
+
+.messWelcome{
+    display: flex;
+    justify-content: center;
+}
+/*------------------------------LOGIN FORM END---------------------------------*/
+
+/*------------------------------REGISTER FORM----------------------------------*/
+
+.registerform{
+    /*border: 1px solid black;*/
+    width: 50%;
+    /*height: 500px;*/
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #4A57B4;
+    margin-bottom: 50px;
+}
+
+.toto{
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------REGISTER FORM END------------------------------*/
+
+/*------------------------------UPDATE USER FORM-------------------------------*/
+.updateUserForm{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #4A57B4;
+}
+.userForm{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+/*------------------------------UPDATE USER FORM END----------------------------*/
+main{
+    margin-top: 50px;
+}
+
+.ligueInfo{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+#infoLigue{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 25px;
+}
+
+.info{
+    width: 30%;
+    height: 250px;
+    /*border: 1px solid black;*/
+}
+
+.info article{
+    margin-left: 15px;
+}
+
+.line{
+    width: 70%;
+    background-color: black;
+    height: 1px;
+    margin: 0 auto;
+}
+
+#cardActu{
+    display: flex;
+    justify-content: space-around;
+}
+.actuCard {
+    width: 170px;
+    /*height: 250px;*/
+    border: 1px solid black;
+    max-height: 255px;
+}
+
+.actuCard span{
+    display: flex;
+    justify-content: center;
+    /*padding: 5px;*/
+    font-size: 19px;
+}
+
+.license img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:  120px;
+    padding: 5px;
+    margin-top: 30px;
+
+}
+
+.sumUp img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.listDate {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.listDate li{
+    display: flex;
+    align-items: baseline;
+
+}
+
+.listDateCircuit{
+color: #3C9DFB;
+}
+
+.managementPlace{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.cardManagementTeam{
+    width: 300px;
+   /* height: 250px;*/
+    /*border: 1px solid black;*/
+}
+
+.cardManagementTeam ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.cardManagementTeam span{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    /*margin-top: 10px;*/
+}
+
+.cardManagementTeam button span{
+    font-size: 14px;
+}
+
+.leagueInsc{
+    margin: 60px 40px;
+}
+
+.catListingPilot{
+    display: flex;
+    flex-direction: column;
+}
+
+.catListingPilot span{
+    border: none;
+    box-shadow: 0 1rem 3rem rgba(8, 8, 8, 0.175) ;
+    background-color: #f5f1f100;
+    color: #715f38;
+    cursor: pointer;
+}
+.listName{
+    display: none;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    left: 100px;
+}
+/*.listName:hover > ul{
+    display: block;
+}*/
+
+.nameCol{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: center;
+}
+
+.InfoCent{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.displayNone{
+    display: none;
+}
+
+.raceDate{
+    margin: 30px 10px;
+}
+
+#newsletter{
+    background-color: #e81d1d;
+    color: white;
+    padding: 6px 20px;
+    transform: rotate(270deg);
+    position: fixed;
+    right: -37px;
+    bottom: 129px;
+
+}
+
+.socialLogo{
+    width: 50px;
+    position: fixed;
+    right: -17px;
+    bottom: 270px;
+}
+
+.croix{
+    width: 20px;
+}
+/*--------------------------KARTING PAGE--------------------*/
+
+img{
+    width: 180px;
+}
+
+.deskLogo{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.deskLogoCenter{
+    border-radius: 20px;
+}
+
+.deskLogoBorder{
+    width: 250px;
+    height: 180px;
+}
+
+.deskText{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+    padding: 45px;
+}
+
+.deskTeam {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    padding: 25px;
+
+}
+
+.kartingActu{
+    display: flex;
+    padding: 35px;
+}
+
+.kartingActu p{
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+.partners{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.partnersTitle{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+    align-items: center;
+}
+
+.partnersLink{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.licenceLink{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.licenceLink img{
+    width: 300px;
+}
+/*------------------------------KARTING PAGE END-------------------------------*/
+/*---------------------PAge Course---------------------*/
+
+.atlanticTrop{
+    font-size: 20px;
+    /*padding: 0;*/
+}
+
+.raceLicence{
+    width: 70%;
+    background-color:cornflowerblue;
+    margin: 0 auto;
+    display: flex;
+}
+
+.raceLicence a{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.raceLicence img{
+    width: 500px;
+    padding: 25px;
+}
+
+.raceAdress{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.circuitRace{
+    display: flex;
+    justify-content: center;
+}
+
+.race{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.race img{
+    margin: 40px;
+    border-radius: 50px;
+}
+
+.circleRace{
+    display: flex;
+    justify-content: center;
+}
+/*-------------------ANIM SVG-----------------------*/
+.animation-container {
+    height: 100px;
+    font-weight: 800;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.animation-container svg {
+    width: 90%;
+    top: 50%;
+    margin: -8% 0 0 5%;
+}
+
+.animation-container svg .text {
+    width: 100%;
+    fill: transparent;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-dasharray: 90,310;
+    stroke-dashoffset: 0;
+    -webkit-animation: text 8s  linear;
+    animation: text 8s infinite linear;
+}
+
+.animation-container svg .text:nth-child(4n + 1) {
+    stroke: black;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.animation-container svg .text:nth-child(4n + 2) {
+    stroke: black;
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+.animation-container svg .text:nth-child(4n + 3) {
+    stroke: black;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+.animation-container svg .text:nth-child(4n + 4) {
+    stroke: black;
+    -webkit-animation-delay: -8s;
+    animation-delay: -8s;
+}
+
+@keyframes text {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+/*-------------------------ANIM SVG FIN----------------------*/
+
+/*-----------------------COURSE PAGE END------------------------------*/
+
+/*--------------------------NOS CLUBS------------------------*/
+.clubsMap{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+}
+
+.clubsPartners h2{
+    font-size: 22px;
+}
+
+.clubsPartners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+/*--------------------------------------------------------------*/
+.cadet {
+    width: 300px !important;
+    background-color: red;
+    height: 100px;
+}
+
+.btnModal{
+    margin-top: 0;
+    position: relative;
+}
+
+.modalPilot{
+    /*display: flex;*/
+   /* flex-direction: column;*/
+    position: absolute;
+    width: 250px;
+    right: 260px;
+    top:834px;
+    z-index: 1;
+    background-color:  cornflowerblue;
+
+}
+
+
+.modalPilot span{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.closeModal{
+    margin-top: 0;
+    color: red;
+    position: absolute;
+    right: 0;
+}
+
+/*--------------------------------------------------------------*/
+
+.mapAdress{
+    width: 405px;
+    border: 1px solid black;
+}
+/*--------------------NOS CLUBS FIN--------------------*/
+
+/*-------------------------GALERIE--------------------*/
+
+.carousel-item img{
+    width: 500px;
+}
+/*----------------------ALL MEMBERS--------------------------*/
+
+.profileList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.profileBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.profilesCard{
+    margin: 15px;
+}
+/*---------------------FIN ALL MEMBERS-------------------------*/
+

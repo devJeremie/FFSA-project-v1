@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #6E5C34;
+    text-decoration: none !important;
+    display:block;
+    /*margin: 20px auto;*/
+    position: relative;
+    overflow: hidden;
+    padding:0 6px;
+    text-transform: uppercase;
+    transition: color 1s cubic-bezier(0.11, 0.7, 0, 1);
+    font-size: 0.875rem;
+    letter-spacing: .15rem;
+    line-height: 1.8;
+}
+
+a:hover{
+    color:#CF2034;
+}
+
+.linkA:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #CF2034;
+    content: "";
+    transform: scale(0);
+    transition: transform 1s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.linkA:hover:after {
+    transform: scale(1);
+}
+
+li {
+    list-style-type: none;
+}
+
+body{
+    background-color: gainsboro;
+    font-family: 'Ramajara-Regular';
+}
+/*-----------------------------------*/
+
+/*------------------ Debut Navbar---------------*/
+nav{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 160px;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+     width: 150px;
+}
+
+.logoImg{
+      padding: 5px;
+}
+
+.account{
+       width: 30px;
+    cursor: pointer;
+}
+
+ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 !important;
+        align-items: center;
+}
+
+header{
+    height: 100vh;
+    margin: 0;
+    background-image: url("../img/kartingVueDevant6.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(20%);
+
+}
+#firstTitle{
+    position: absolute;
+    color: black;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+/*------------------MODAL LOGIN MENU-----------------------------*/
+.loginMenuHidden{
+    background-color:  #e612123d;
+    position: absolute;
+    top: 64%;
+    left: 85%;
+    z-index: 1;
+    border-radius: 10px;
+    display: none;
+}
+.loginMenuHidden > li{
+    border: solid 1px white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.loginMenuHidden a{
+    color: black;
+}
+/*-------------------MODAL LOGIN MENU FIN------------------------------*/
+.displayBlock{
+    display:block!important;
+}
+/*------------------------MENU BURGER------------------------------*/
+.menuBurger{
+
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.menuBurger::before,
+.menuBurger::after{
+    content: '';
+    width: 100%;
+    height: 50%;
+    background-color: #EAFBFF;
+}
+
+.menuBurger::after{
+    background-color: #208FF9;
+}
+
+.menuBurger nav{
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation{
+    max-width: 80%;/*a mettre en header bis*/
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 5px;
+    line-height: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuBurger ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 0;
+    overflow: hidden;
+    transition: .4s cubic-bezier(.77,0,.18,1);
+}
+
+.menuBurger.active ul{
+    width: 420px;
+    margin-right: 20px;
+}
+/*-----------------a deplacer nav */
+
+.navLien  > li > a{
+    font-size: 9px;
+}
+
+a{
+    color: #888;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover{
+    color: #3C9DFB;
+}
+
+.basculant{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 48px;
+    padding: 14px 5px;
+    cursor: pointer;
+}
+
+.menuBurger:not(.active) .nav-toogler{
+    margin-left: -10px;
+}
+
+.basculant::before,
+.basculant::after{
+    content: '';
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #3C9DFB;
+    transition: .4s cubic-bezier(.77,0,.18,1);
+}
+
+.basculant::after {
+    margin-top: 10px;
+}
+
+.menuBurger.active .basculant::before,
+.menuBurger.active .basculant::after{
+    position: absolute;
+    top: 50%;
+    background-color: #3C9DFB;
+    transform: rotate(135deg);
+}
+
+.menuBurger.active .basculant::after {
+    transform: rotate(-135deg);
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menuBurger {
+        display: block;
+    }
+    .loginMenuHidden{
+        display: block;
+    }
+    .menuBurger nav{
+        justify-content: flex-start;
+    }
+    nav{
+        justify-content:space-between;
+    }
+    .barMenu{
+        display: none;
+    }
+
+}
+

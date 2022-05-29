@@ -1,0 +1,64 @@
+{% extends 'baseBis.html.twig' %}
+
+{% block body %}
+
+    <main>
+        <section>
+            <div class="deskLogo">
+                <img class="deskLogoBorder" src="../public/assets/img/logo-ffsa.jpg" alt="Logo de la FFSA">
+                <img class="deskLogoCenter" src="assets/img/ligueDeKarting.png" alt="Logo de la ligue Nouvelle Aquitaine Sud">
+                <img class="deskLogoBorder" src="assets/img/logoFinal.jpg" alt="Logo de la Nouvelle Aquitaine">
+            </div>
+            <div class="deskText">
+                <span> COMITE DIRECTEUR DE LA LIGUE KARTING D'AQUITAINE SUD 2021</span>
+                <span>Suite à l'Assemblée Générale du 30 janvier 2021, le Comité Directeur de la LKNAS est composé comme suit :</span>
+            </div>
+            <div class="deskTeam"><!----------------MEMBRE DU BUREAU---------------->
+                <span> Yves BLANC : Président </span>
+                <span>Odette DEJUNIAT : Vice-présidente </span>
+                <span>François MILLET : Trésorier </span>
+                <span>Alain PONS : Secrétaire </span>
+                <span>Fabien BLANC : Secrétaire adjoint </span>
+            </div>
+        </section>
+        <section class="kartingActu">
+            <img src="{{ asset('assets/img/atlanticTrophee2022.PNG') }}" alt="Image de l'atlantic Trophée 2022">
+            <p>
+                Pas moins de 7 épreuves sur 5 circuits différents sont déjà prévues au programme avec une Super Finale pour clôturer en fin de saison L’Atlantic Trophée 2022.
+                La variété des circuits retenus, le prix attractif des licences FFSA 2022 pour tous les pilotes Aquitains, la super dotation de fin de saison  lors de la Grande Finale (15000€) un prix fixe d’engagement par course à 75 €, la qualité d’organisation des épreuves encadrées par des officiels confirmés nous laisse présager d’une grande saison de Karting 2022.
+                Ces épreuves seront organisées suivant le format des Courses Club et serviront pour certaines à la qualification pour la Coupe de France FFSA 2022.
+            </p>
+        </section>
+        <section class="partners"><!------------SECTION PARTENAIRES---------------->
+            <span class="partnersTitle">NOS PARTENAIRES</span>
+            <div class="partnersLink">
+                <a href="https://www.kartmag.fr/" target="_blank"><img src="assets/img/KART-MAG.jpg" alt="Lien direct site Kart-mag"></a>
+                <a href="https://lfkarting.fr/" target="_blank"><img src="assets/img/LF-Karting.jpg" alt="Lien direct site LF-Karting"></a>
+                <a href="https://www.action-karting.fr/" target="_blank"><img src="assets/img/Logo_action_karting.jpg" alt="Lien direct site Action-karting"></a>
+            </div>
+            <div class="partnersLink">
+                <a href="https://www.racingsportscars.com/" target="_blank"><img src="assets/img/racingSport.jpg" alt="Lien direct site Racing-Sport"></a>
+                <a href="https://www.itakashop.com/fr/" target="_blank"><img src="assets/img/itakashop.jpg" alt="Lien direct site ItakaShop"></a>
+                <a href="https://www.sprint-racing.com/" target="_blank"><img src="assets/img/Sprint-Racing.jpg" alt="Lien direct site Sprint-Racing"></a>
+            </div>
+            <div class="partnersLink">
+                <a href="https://www.ffsa.org/" target="_blank"><img src="assets/img/logo-ffsa.jpg" alt="Lien direct site FFSA"></a>
+                <a href="https://www.tticarbone.com/" target="_blank"><img src="assets/img/TtiCarbone.png" alt="Lien direct site TTI-Carbone"></a>
+                <a href="https://www.sportautoaquitaine.com/" target="_blank"><img src="assets/img/ligueSportAutoNAS.jpg" alt="Lien direct site Sport-Auto-NAS"></a>
+            </div>
+        </section>
+        <section>
+            <span class="partnersTitle">N'ATTENDEZ PLUS POUR PRENDRE VOTRE LICENCE</span>
+            <div class="licenceLink">
+                <a href="https://licence.ffsa.org/" target="_blank"><img src="assets/img/Licence-2022.jpg" alt="Lien direct pour achat de Licence-2022"></a>
+            </div>
+        </section>
+        <section>
+            <p class="partnersTitle">
+                LA SAISON 2022 EST LANCEE
+                CONSULTEZ LE CLASSEMENT
+                ET REJOIGNEZ NOUS
+            </p>
+        </section>
+    </main>
+{% endblock %}

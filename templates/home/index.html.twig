@@ -1,0 +1,204 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <main> <!--SECTION INFO LIGUE-->
+        <span class="ligueInfo">INFO LIGUE</span>
+        <section id="infoLigue">
+            <div class="info shadow-lg">
+                <span class="InfoCent">
+                    Course à venir
+                </span>
+                <ul class="raceDate">
+                    <li><a href="">Layrac 19/06/2022 Circuit de Layrac 47 /Terminée</a></li>
+                    <li><a href="#nont">Nontron 18/09/2022 Circuit du périgord 24 (Teyjat)</a></li>
+                </ul>
+            </div>
+            <div class="info shadow-lg">
+                <span class="InfoCent">
+                    Listes des pilotes
+                </span>
+                <article>
+<!------------------------------MODAL LISTING PILOTES----------------------------------->
+                    <button class="btnModal">Catégorie Minime </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>BOUCHARD Adrian (n°815)</span>
+                        <span>PENOUTY-KRYNSE Ethan (n°888)</span>
+                        <span>BERDINEL Liam (n°806)</span>
+                        <span>ACCARD Jaouen (n°808)</span>
+                        <span>DUPOUX Tine (n°816)</span>
+                        <span>DEGORTES Jules (n°830)</span>
+                        <span>BRAGEOT Mattis (n°811)</span>
+                        <span>BORDANOVA Aaron (n°817)</span>
+                        <span>MONTAGNAN Johan (n°821)</span>
+
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie Cadet </button>
+                    <div class="modalPilot displayNone ">
+                        <button class="closeModal">X</button>
+                        <span>BEE Colin (n°59)</span>
+                        <span>BOUCHARD Baptiste (n°9)</span>
+                        <span>BERDINEL Loris (n°16)</span>
+                        <span>BUCLIER Gabriel (n°19)</span>
+
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie Nationale </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>SIBEL Marine (n°140)</span>
+                        <span>LEURS Roméo (n°111)</span>
+                        <span>GOYAT Mathis (n°141)</span>
+                        <span>FORNY Lilian (n°188)</span>
+                        <span>MARACCO Diego (n°100)</span>
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie Nationale 2 </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>VINCHES Erwann (n°158)</span>
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie Senior </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>PIGANEAU Dorian (n°288)</span>
+                        <span>BARRANGER Lucas (n°221)</span>
+                        <span>LESCA Steven (n°230)</span>
+                        <span>GALY Lucas (n°224)</span>
+                        <span>BRUNSDON Andrew (N°210)</span>
+                        <span>MEGE Dylan (n°246)</span>
+                        <span>FERRANT Tomy (n°251)</span>
+                        <span>GONZALEZ Quentin (n°222)</span>
+                        <span>PUZANTIAN Alexis (n°255)</span>
+                        <span>REILLAT Grégory (n°220)</span>
+                        <span>PIERRE Mathias (n°208)</span>
+                        <button class="closeModal">X</button>
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie Master </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>GEROMETTA Gérald (n°448)</span>
+                        <span>ROCHEREAU Benoit (n°455)</span>
+                        <span>ICAUD Adrian (n°422)</span>
+                        <span>ROMANZIN Tristan (n°491)</span>
+                        <span>CORNEAU Yannick (n°424)</span>
+                        <span>WLOSZCZYNSKI Jonathan (n°428)</span>
+                        <span>BASTIANI Cyril (n°494)</span>
+                        <span>MAILLOCHAUD Benoit (n°420)</span>
+                        <span>BRABANT Yann (n°486)</span>
+                        <span>MAZOUAT Laurent (n°464)</span>
+                        <span>LAZONDE Clément (n°430)</span>
+                        <span>CUSSAC PICOT Vivien (n°433)</span>
+                        <span>FAURY Ludovic (n°406)</span>
+                        <span>MAZOUIN Aurélien (n°442)</span>
+                        <span>PHELIPPOT Roman (n°412)</span>
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie Gentleman </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>SOULARD Jean Benoit (n°540)</span>
+                        <span>ROSSELLE Philippe (n°505)</span>
+                        <span>THOREL Alain (n°504)</span>
+                        <span>BROVIA Patrick (n°522)</span>
+                        <span>REFLOCH Jacques (n°519)</span>
+                        <span>FAURE Joel (n°544)</span>
+                        <span>DESFORET Thierry (n°503)</span>
+                    </div>
+                </article>
+                <article>
+                    <button class="btnModal">Catégorie KZ 2 </button>
+                    <div class="modalPilot displayNone">
+                        <button class="closeModal">X</button>
+                        <span>PY Oscar (n°754)</span>
+                        <span>LASSERRE Rodolphe (n°717)</span>
+                        <span>PANNETIER Marvin (n°779)</span>
+                        <span>PEREIRA Erwan (n°764)</span>
+                        <span>TARRES Jimmy (n°347)</span>
+                        <span>ORER Dylan (n°718)</span>
+                        <span>TOUTIN Maxime (n°333)</span>
+                        <span>ROI SANS SAC Nicolas (n°307)</span>
+                    </div>
+                </article>
+            </div>
+        </section><!--FIN SECTION INFO LIGUE-->
+        <div class="line"></div>
+        <span class="ligueInfo">ACTUALITES</span>
+        <section id="cardActu">
+            <div class="actuCard shadow-lg">
+                <span>Date des courses</span><!------------------------DATE ET LISTING COURSE--------------------->
+                <ul class="listDate">
+                    <li><span class="listDateCircuit">Lescar : </span> 13/03/2022</li>
+                    <li><span class="listDateCircuit">Nontron : </span> 08/05/2022</li>
+                    <li><span class="listDateCircuit">Magescq : </span> 22/05/2022</li>
+                    <li><span class="listDateCircuit">Layrac : </span> 19/06/2022</li>
+                    <li><span class="listDateCircuit">Nontron : </span> 18/09/2022</li>
+                    <li><span class="listDateCircuit">Pageas : </span> 16/10/2022</li>
+                    <li><span class="listDateCircuit">Layrac : </span> 06/11/2022</li>
+                </ul>
+            </div>
+            <div class="actuCard shadow-lg">
+                <span>Classement actuel</span>
+            </div>
+            <div class="actuCard shadow-lg license">
+                <span>Licence 2022</span>
+                <a href="https://licence.ffsa.org/" target="_blank">
+                    <img src="./assets/img/Licence-2022.jpg" alt="Photo de la license 2022 de la FFSA">
+                </a>
+            </div>
+
+        </section>
+        <section class="managementTeam">
+            <h2 class="ligueInfo">L'équipe encadrante de la ligue et officiels </h2>
+            <div class="managementPlace">
+                <div class="cardManagementTeam shadow-lg">
+                    <span>Comité directeur de la ligue</span>
+                    <ul>
+                        <li>Yves Blanc : Président</li>
+                        <li>Odette Dejuniat : Vice-présidente</li>
+                        <li>François Millet : Trésorier</li>
+                        <li>Alain Pons : Secrétaire</li>
+                        <li>Fabien Blanc : Secrétaire Adjoint</li>
+                    </ul>
+                </div>
+                <div class="cardManagementTeam shadow-lg doubleUl">
+                    <span>Officiels</span>
+
+                    <ul>
+                        <li>Daniel Dejuniat  /  Thierry Xuereb </li>
+                        <li>Gérard Duchatelle  /  Jacques Refloch</li>
+                        <li>Jean-Pierre Dumur  /  Patrick Loubere</li>
+                        <li>Patrick Brovia  /  Gérard Cassou</li>
+                        <li>Eric Estrach  /  Jacques Saint Guirons</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="managementPlace">
+                <div class="cardManagementTeam shadow-lg">
+                    <span>Pilote, vous nêtes pas encore inscrit?? </span>
+                    <button class="btn leagueInsc">
+                        <a href="{{  path('app_register') }}">
+                        <span>Inscription</span>
+                        <span>Ligue Nouvelle Aquitaine Sud</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="cardManagementTeam shadow-lg">
+                    <span>Mot du Président</span>
+                    <p>
+                        2022 était pour nous le grand retour des épreuves en Aquitaine Sud. Après le succès de l’Atlantic Trophée 2022 à Pau Lescar aux pieds des Pyrénées, de Layrac en Lot et Garonne et tout les autres circuits nous avons atteint des records avec plus de 180 pilotes inscrits. La saison 2023 s'annonce grandiose.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

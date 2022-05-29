@@ -1,0 +1,32 @@
+{% extends 'baseBis.html.twig' %}
+
+{% block body %}
+    <main>
+        <section>
+            <h1 class="userForm">MODIFIER MON PROFIL</h1>
+            <div class="updateUserForm">
+                {{ form_start(userForm) }}
+                    {{ form_row(userForm.email,{
+                        'attr':{'class': 'toto'}
+                    }) }}
+                    {{ form_row(userForm.password, {
+                        label: 'Mot de passe',
+                        'attr':{'class': 'toto'}
+                    }) }}
+                    {{ form_row(userForm.name, {
+                        label: 'Prénom',
+                        'attr':{'class': 'toto'}
+                    }) }}
+                    {{ form_row(userForm.lastname, {
+                        label: 'Nom de famille',
+                        'attr':{'class': 'toto'}
+                    }) }}
+                    {{ form_row(userForm.media, {
+                        label: 'Votre photo',
+                        'attr':{'class': 'toto'}
+                    }) }}
+                {{ form_end(userForm) }}
+            </div>
+        </section>
+    </main>
+{% endblock %}

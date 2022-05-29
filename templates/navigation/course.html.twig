@@ -1,0 +1,61 @@
+{% extends 'baseBis.html.twig' %}
+
+{% block body %}
+
+<main>
+    <section class="raceLicence">
+        <span class="partnersTitle">N'Attendez plus pour prendre votre licence</span>
+        <a href="https://licence.ffsa.org/" target="_blank"><img src="assets/img/Licence-2022.jpg" alt="Lien direct pour achat License FFSA 2022"></a>
+    </section>
+    <section>
+        <div>
+            <div class="animation-container">
+                <svg viewBox="0 205 600 600">
+                    <symbol id="text">
+                        <text text-anchor="middle" x="50%" y="50%">Liste des courses</text>
+                    </symbol>
+                    <use xlink:href="#text" class="text"></use>
+                    <use xlink:href="#text" class="text"></use>
+                    <use xlink:href="#text" class="text"></use>
+                    <use xlink:href="#text" class="text"></use>
+                </svg>
+            </div>
+            <!--<span class="partnersTitle">Liste des courses</span>-->
+            <span class="partnersTitle atlanticTrop">Atlantic Trophée Karting 2022</span>
+        </div>
+        <article class="circuitRace">
+            <div class="raceAdress">
+                <span>Lescar 13/03/2022</span>
+                <span>Nontron 08/05/2022</span>
+            </div>
+            <div class="raceAdress">
+                <span>Layrac 19/06/2022</span>
+                <span>Magescq 22/05/2022</span>
+                <span>Nontron 18/09/2022</span>
+            </div>
+            <div class="raceAdress">
+                <span>Pageas 16/10/2022</span>
+                <span>Layrac 06/11/2022</span>
+            </div>
+        </article>
+    </section>
+    <section><!---------------INFO COURSE------------------>
+            <span class="partnersTitle ">
+                Info courses
+            </span>
+        <article class="race">
+            <div class="circleRace">
+                <img src="assets/img/membre/lescar.PNG" alt="">
+            </div>
+            <img id="nontron" src="assets/img/membre/Nontron.PNG" alt="">
+            <img src="assets/img/membre/Magescq.PNG" alt="">
+            <img src="assets/img/membre/Layrac.PNG" alt="">
+        </article>
+        <div class="race">
+            <img src="assets/img/membre/Nontron.PNG" alt="">
+            <img src="assets/img/membre/Pageas.PNG" alt="">
+            <img src="assets/img/membre/Layrac.PNG" alt="">
+        </div>
+    </section>
+</main>
+{% endblock %}
